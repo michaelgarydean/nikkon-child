@@ -1,9 +1,10 @@
-<?php
-/**
- * The template for displaying all single posts.
- *
- * @package Nikkon
- */
+<?php 
+/*
+Template Name: Releases
+Template Post Type: post
+
+@package Nikkon
+*/
 
 get_header(); ?>
 
@@ -13,8 +14,6 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php get_template_part( 'templates/contents/content', 'single' ); ?>
-
-			<?php the_post_navigation(); ?>
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template

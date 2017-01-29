@@ -8,6 +8,101 @@ Template:       nikkon
 Version:        0.1.0
 */
 
+/**
+ * =========================================
+ * Main site styling
+ * =========================================
+ */
 .site-branding {
-    padding: 20px 0px;
+    padding: 40px 0px;
 }
+
+/**
+ * =========================================
+ * Release pages 
+ * =========================================
+ */
+
+.content-no-sidebar .content-area {
+    padding-top: 20px;
+}
+
+.page-content, .entry-content, .entry-summary {
+    margin-top: 0px;
+}
+ 
+.post-left-column {
+    float: left;
+    width: 33%;
+    min-width: 33%;
+}
+.post-thumbnail {
+    width: 100%;
+}
+
+.entry-header {
+    float: left;
+    width: 63%;
+    
+    margin: 0 2% 2% 2%;
+}
+
+.post-content {
+    float: left;
+    width: 63%;
+    
+    margin: 0 2%;
+}
+
+#store-logos {
+    float: left;
+    position: relative;
+    width: 100%;
+    height: 30px;
+    
+    margin: 20px 0px;
+}
+
+.store-logo {
+    float: left;;
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.store-link {
+    position: absolute; 
+    width :100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    
+    z-index: 1;
+}
+
+#beatport {
+    left: 0;
+    background-image: url( "images/store-logos/bp-logo.png" );
+}
+
+#amazon {
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    background-image: url( "images/store-logos/ama-logo.png" );
+}
+
+#traxsource {
+    right: 0;
+    background-image: url( "images/store-logos/ts-logo.png" );
+}
+
+/**
+ * =========================================
+ * Metaboxes and metadata
+ * =========================================
+ */
