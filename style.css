@@ -14,7 +14,7 @@ Version:        0.1.0
  * =========================================
  */
 .site-branding {
-    padding: 40px 0px;
+    padding: 91px 0px;
 }
 
 /**
@@ -99,6 +99,14 @@ Version:        0.1.0
 #traxsource {
     right: 0;
     background-image: url( "images/store-logos/ts-logo.png" );
+}
+
+.cat-links {
+    display: none;
+}
+
+.entry-footer {
+    min-height: 20px;
 }
 
 /**
