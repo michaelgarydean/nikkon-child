@@ -38,7 +38,7 @@
 			                <?php if ( !get_theme_mod( 'nikkon-blog-blocks-remove-meta', false ) ) : ?>
 			                    <?php if ( 'post' == get_post_type() ) : ?>
 			                    <div class="entry-meta">
-			                        <?php echo get_the_date(); ?>
+			                        <?php echo get_the_author(); ?>
 			                    </div><!-- .entry-meta -->
 			                    <?php endif; ?>
 			                <?php endif; ?>

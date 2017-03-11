@@ -13,9 +13,17 @@ Version:        0.1.0
  * Main site styling
  * =========================================
  */
+/** Center logo in top banner **/
 .site-branding {
     padding: 91px 0px;
 }
+
+/** Center text in middle widget **/
+/**
+#text-3 {
+    text-align: center;
+}
+**/
 
 /**
  * =========================================
@@ -45,6 +53,10 @@ Version:        0.1.0
     width: 63%;
     
     margin: 0 2% 2% 2%;
+}
+
+.entry-content {
+    margin-bottom: 71px;
 }
 
 .post-content {
@@ -109,8 +121,42 @@ Version:        0.1.0
     min-height: 20px;
 }
 
+@media screen and (max-width: 1040px) {
+
+    .main-navigation-left {
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+}
+
+@media only screen and (max-width: 900px) {
+
+}
+
+@media only screen and (max-width: 782px) {
+	.post-left-column, .post-content, .entry-header {
+		width: auto;
+	}
+}
+
+@media only screen and (max-width: 580px) {
+
+}
+
 /**
  * =========================================
  * Metaboxes and metadata
  * =========================================
  */
+
+/**
+ * =========================================
+ * Front page
+ * =========================================
+ */
+.blog-blocks-content-inner > header {
+        float: none;
+        width: auto;
+}

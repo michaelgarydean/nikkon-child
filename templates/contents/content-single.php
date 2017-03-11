@@ -42,7 +42,14 @@
 		</div> <!-- End post-left-column -->
 		
 		<header class="entry-header">
-			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			<?php 
+				$byline = sprintf(
+					esc_html_x( '%s', 'post author', 'nikkon' ),
+					'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
+				);
+
+				the_title( "<h1 class=\"entry-title\">$byline - ", '</h1>' ); 
+			?>
 			<div class="post-entry-meta">
 				<?php hushlamb_released_on( $post ); ?>
 			</div><!-- .entry-meta -->
